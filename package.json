@@ -1,0 +1,17 @@
+{
+  "name": "lirinode",
+  "version": "1.0.0",
+  "description": "Console log node app that uses spotify, omdb, and bands in town apis to get info about events in your area.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kurt Cooney",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.2.0",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.0.7"
+  }
+}
