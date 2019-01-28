@@ -6,6 +6,7 @@ This is a knock off attempt to replicate asking the computer about a movie, song
 > node index movie-this "[NAME OF MOVIE]"
 
 note that the name of the movie should be enclosed in quotation marks
+<hr/>
 
 ### To look up information about a song, the user should type in the following:
 > node index spotify-this-song "[NAME OF MOVIE]"
