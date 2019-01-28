@@ -3,6 +3,7 @@ let liri = require("./liri.js");
 let command = process.argv[2];
 let request = process.argv[3];
 let logFile = "log.txt";
+
 switch (command) {
      case `concert-this`:
           liri.getConcert(request, logFile);

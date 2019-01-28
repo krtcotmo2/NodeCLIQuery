@@ -1,11 +1,12 @@
 require("dotenv").config();
-require("node-spotify-api");
+
 let file = require("fs");
 let moment = require('moment');
-let myKeys = require("./key.js");
 let axios = require("axios");
+let Spotify = require("node-spotify-api");
+let keys = require("./key.js");
+let spotify = new Spotify(keys.spotify);
 
-//let spotify = new Spotify(myKeys.spotify);
 
 let getConcert = (arg, fileName) => {
      logData(fileName, `${moment.utc(moment.utc().format())}\nCall: getConcert\n`);
@@ -29,7 +30,14 @@ let getConcert = (arg, fileName) => {
           })
 };
 let getSong = (arg, fileName) => {
-     console.log(`Song: `, arg);
+     //console.log(`Song: `, arg);
+     spotify.search({ type: 'track', query: arg }, function(err, data) {
+          if (err) {
+            return console.log('Error occurred: ' + err);
+          }
+          debugger;
+        console.log(data); 
+     });
 };
 let getMovie = (arg, fileName) => {
      logData(fileName, `${moment.utc(moment.utc().format())}\nCall: getMovie\n`);
