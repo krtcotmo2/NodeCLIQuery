@@ -17,7 +17,7 @@ switch (command) {
           liri.getMovie(request, logFile);
           break;
      case `do-what-it-says`:
-          liri.getAction(request, logFile);
+          liri.getAction(logFile);
           break;
      default:
           break;
