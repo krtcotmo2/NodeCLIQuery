@@ -11,6 +11,9 @@ switch (command) {
           liri.getSong(request);
           break;
      case `movie-this`:
+          if(request == null){
+               request = "Mr.Nobody";
+          }
           liri.getMovie(request);
           break;
      case `do-what-it-says`:
