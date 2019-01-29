@@ -26,3 +26,4 @@ note that the name of the artist should be enclosed in quotation marks
 > node index do-what-it-says
 
 
+I wrote this piece with two parts. The liri.js file acts as a module with the functions inside of it. The index.js uses the liri.jas file to execute the main functions. Inside the random file I added two there options. This required an additional split of the string into an initial array and then split the parts of an individual record to get the action and search item. The log file has numerous entries per record and I tried to set up spacing and breaks between records.
