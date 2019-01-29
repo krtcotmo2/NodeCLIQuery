@@ -1,0 +1,30 @@
+Tue Jan 29 2019 02:48:30 GMT+0000
+Call: getSong
+The Sign by Ace of Base
+Album: The Sign (US Album) [Remastered]
+Preview link: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=03ec52ff40d745e49bcbb61f66b919b7
+
+Tue Jan 29 2019 02:48:49 GMT+0000
+Call: getSong
+Dr. Feelgood by Mötley Crüe
+Album: Dr. Feelgood 20th Anniversary (Expanded Version)
+Preview link: https://p.scdn.co/mp3-preview/c5eb3b91b3eb57c8b8e899376e430238d1076d66?cid=03ec52ff40d745e49bcbb61f66b919b7
+
+Tue Jan 29 2019 02:50:02 GMT+0000
+Call: getSong
+The Sign by Ace of Base
+Album: The Sign (US Album) [Remastered]
+Preview link: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=03ec52ff40d745e49bcbb61f66b919b7
+
+Tue Jan 29 2019 02:50:12 GMT+0000
+Call: getSong
+Kickstart My Heart by Mötley Crüe
+Album: Dr. Feelgood
+Preview link: https://p.scdn.co/mp3-preview/65cf66e91638342d2a5adeb28485e416dd86fd6c?cid=03ec52ff40d745e49bcbb61f66b919b7
+
+Tue Jan 29 2019 02:51:25 GMT+0000
+Call: getSong
+The Sign by Ace of Base
+Album: The Sign (US Album) [Remastered]
+Preview link: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=03ec52ff40d745e49bcbb61f66b919b7
+

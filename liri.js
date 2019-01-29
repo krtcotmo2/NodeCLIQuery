@@ -10,7 +10,7 @@ let spotify = new Spotify(keys.spotify);
 
 let getConcert = (arg, fileName) => {
      logData(fileName, `${moment.utc(moment.utc().format())}\nCall: getConcert\n`);
-     console.log(`Concert: `, arg);
+     console.log(`Concert: `, arg);     
      axios.get("https://rest.bandsintown.com/artists/" + arg + "/events?app_id=codingbootcamp")
           .then(function (response) {
                let theShows = response.data;
@@ -30,13 +30,27 @@ let getConcert = (arg, fileName) => {
           })
 };
 let getSong = (arg, fileName) => {
-     //console.log(`Song: `, arg);
+     let file = fileName
      spotify.search({ type: 'track', query: arg }, function(err, data) {
           if (err) {
             return console.log('Error occurred: ' + err);
           }
-          debugger;
-        console.log(data); 
+          if(data.tracks.items.length == 0){
+               getSong("The Sign Ace of Base", file);
+               return;
+          }       
+          debugger; 
+          logData(fileName, `${moment.utc(moment.utc().format())}\nCall: getSong\n`);
+          let track = data.tracks.items[0];
+          let artists = track.artists.map(function(o){return o.name;}).join(",");
+          let songName = track.name;
+          let preview = track.preview_url;
+          let album = track.album.name;
+             
+          console.log(`${songName} by ${artists}`);
+          console.log(`   Album: ${album}`);
+          console.log(`   Preview link: ${preview}`);
+          logData(fileName, `${songName} by ${artists}\nAlbum: ${album}\nPreview link: ${preview}\n\n`);
      });
 };
 let getMovie = (arg, fileName) => {
