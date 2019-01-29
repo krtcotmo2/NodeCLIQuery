@@ -54,6 +54,9 @@ let getSong = (arg, fileName) => {
      });
 };
 let getMovie = (arg, fileName) => {
+     if(arg == undefined){
+          arg ='Mr. Nobody';
+     }
      logData(fileName, `${moment.utc(moment.utc().format())}\nCall: getMovie\n`);
      axios.get("http://www.omdbapi.com/?t=" + arg + "&y=&plot=short&apikey=trilogy")
           .then(function (response) {
