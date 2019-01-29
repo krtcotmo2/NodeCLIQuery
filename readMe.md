@@ -9,14 +9,14 @@ note that the name of the movie should be enclosed in quotation marks
 <hr/>
 
 ### To look up information about a song, the user should type in the following:
-> node index spotify-this-song "[NAME OF MOVIE]"
+> node index spotify-this-song "[NAME OF SONG]"
 
 note that the name of the song should be enclosed in quotation marks
 <hr/>
 
 
 ### To look up information about an upcoming concerts, the user should type in the following:
-> node index concert-this "[NAME OF MOVIE]"
+> node index concert-this "[NAME OF BAND]"
 
 note that the name of the artist should be enclosed in quotation marks
 <hr/>
